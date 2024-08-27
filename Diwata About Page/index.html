@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diwata Pares About Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="main">
+    <header>
+      <div class="logo-container">
+        <a href="#">
+          <img src="DP-Logo.png" class="logo" alt="Diwata Pares Logo" title="Diwata Pares Logo">
+        </a>
+      </div>
+      <div class="toggle"></div>
+      <ul class="navigation">
+        <li><a href="../Diwata Landing Page/index.html" class="link">Home</a></li>
+        <li><a href="../Diwata Product Menu/index.html" class="link">Menu</a></li>
+        <li><a href="#" class="link">Promos</a></li>
+        <li><a href="../Diwata About Page/index.html" class="link">About</a></li>
+        <li><a href="#" class="link">Contact</a></li>
+      </ul>
+    </header>
+
+        <div class="content">
+            <div class="text">
+                <h2 class="section-title"><span>About Us</span></h2>
+                <p>Diwata Pares Overload was founded by Deo 'Diwata' Balbuena with the vision to bring the best pares experience to everyone. We are passionate about providing high-quality food and exceptional service to our customers.<span id="short-info"></span></p>
+                <div id="expanded-info">
+                <p>Growing up in a farming community, life was hard, and opportunities were limited. At the age of 17, he moved to Metro Manila, hoping to find a better life. However, the reality was harsh, and Diwata found himself hopping from one menial job to another, working as a fruit vendor, a helper, and a construction worker.</p>
+                <p>The onset of the COVID-19 pandemic brought another wave of hardship when Diwata lost his job in construction. Homeless and desperate, he lived under a bridge and began selling cigarettes, coffee, soft drinks, and other goods to survive.</p>
+                <p>During this challenging period, Diwata’s late friend, Mama Randy, gave him crucial advice that changed his path. “Sabi niya ‘mas madali ang pera kung dadagdagan natin ng pagkain yan. Mas malakas yung kita mo doon, mas malaki,” Diwata shared. Mama Randy also taught him how to cook, leading Diwata to add food items to his merchandise. This pivot to selling food proved to be a game-changer.</p>
+                <p>Diwata’s culinary skills, combined with his vibrant personality, quickly garnered a loyal customer base. He set up a mini stall in Pasay City, serving bowls of pares—braised beef brisket cubes with unlimited rice and soup. The mouthwatering dish, priced at just P100, became an instant hit. His fame grew rapidly, and soon, people from all over the country, and even from abroad, were coming to taste his food.</p>
+                </div>
+                <a href="#" class="btn" onclick=myFunction() id="myBtn">Read More</a>
+              </div>
+        
+            <div class="member">
+                <div class="image-container">
+                    <img src="Diwata-About.png" alt="Deo 'Diwata' Balbuena" title="Deo 'Diwata' Balbuena">
+                    <div class="text-container">
+                      <div class="first">
+                      </div>
+                        <div class="second">
+                        <h3>Deo 'Diwata' Balbuena</h3>
+                        <p>Diwata Pares Overload Owner</p>
+                        <ul class="sci">
+                          <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                          <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                          <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+      
+
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    
+
+    <script>
+        // Navigation Toggle
+        const menutoggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menutoggle.onclick = function(){
+          menutoggle.classList.toggle('active')
+          navigation.classList.toggle('active')
+        }
+
+        // Read Button
+        function myFunction() {
+          var dots = document.getElementById("short-info");
+          var moreText = document.getElementById("expanded-info");
+          var btnText = document.getElementById("myBtn");
+
+          if (dots.style.display === "none") {
+            dots.style.display = "block";
+            btnText.innerHTML = "Read More";
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read Less";
+            moreText.style.display = "block";
+          }
+    }
+    </script>    
+</body>
+</html>
